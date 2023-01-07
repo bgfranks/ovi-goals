@@ -7,7 +7,7 @@
 <Header />
 
 <main
-	class="bg-gray-900 h-screen text-white bg-ovi bg-cover bg-no-repeat bg-center overflow-hidden"
+	class="bg-gray-900 h-screen text-white bg-ovi bg-cover bg-no-repeat bg-center overflow-hidden flex items-center justify-center"
 >
 	<slot />
 </main>
