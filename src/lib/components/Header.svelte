@@ -1,5 +1,5 @@
 <div
-	class="fixed top-0 flex px-10 bg-gray-900 bg-opacity-60 w-full md:w-[80%] lg:w-[65%] text-white justify-between items-center py-3 md:rounded-r-full"
+	class="fixed top-0 flex px-10 bg-black bg-opacity-70 w-full md:w-[80%] lg:w-[70%] text-white justify-between items-center py-3 md:rounded-r-full"
 >
 	<a href="/">
 		<img src="caps.png" alt="Washington Capitals Logo" class="w-[45px]" />
