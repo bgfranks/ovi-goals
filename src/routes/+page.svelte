@@ -1,9 +1,12 @@
 <script lang="ts">
-	import type { LayoutData } from './$types';
-	export let data: LayoutData;
+	type Data = {
+		totalGoals: number;
+	};
 
-	console.log(data);
+	export let data: Data;
+
+	$: ({ totalGoals } = data);
 </script>
 
 <h1 class="text-2xl">Ovi Goals</h1>
-<p />
+<p>{totalGoals}</p>
