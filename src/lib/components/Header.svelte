@@ -1,8 +1,6 @@
-<div
-	class="fixed top-0 flex px-10 bg-black bg-opacity-70 w-full md:w-[80%] lg:w-[70%] text-white justify-between items-center py-3 md:rounded-r-full"
->
+<div class="fixed top-0 flex px-10 lg:px-16 w-full text-white justify-between items-center py-3">
 	<a href="/">
-		<img src="caps.png" alt="Washington Capitals Logo" class="w-[45px]" />
+		<img src="caps.png" alt="Washington Capitals Logo" class="w-[60px]" />
 	</a>
 	<nav class="md:pr-10">
 		<ul class="flex gap-10 md:gap-16 text-lg">

@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+	.logo {
+		@apply bg-gradient-to-l from-[#C8102E] via-[#ffffff] to-[#041E42] bg-clip-text text-transparent hover:animate-bounce;
+	}
+}
