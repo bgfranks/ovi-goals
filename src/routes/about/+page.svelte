@@ -3,11 +3,11 @@
 >
 	<h3 class="text-4xl text-white underline">Why I made this project</h3>
 	<p>
-		As a long time Hurricane's fan, I have seeing Ovi blow one timers on my team countless times.
+		As a long time Hurricane's fan, I have seen Ovi blow one timers past my team countless times.
 		Despite watching him beat my team throughout the years, it has been nothing short of incredible
-		to see how many goals he has scored. As he has pushed closer to passing Gretzky, I wanted to
-		create a fun little project to keep track of the number of goals scored until he surpasses the
-		record.
+		to see how many goals he has scored. As he has pushes closer to passing Gretzky as the greatest
+		scorer of all time, I wanted to create a fun little project to keep track of the number of goals
+		scored until he surpasses the record.
 	</p>
 	<p>
 		For all my fellow nerds out there, this site was created with SvelteKit using an open source NHL
