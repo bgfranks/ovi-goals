@@ -1,6 +1,6 @@
 import type { PageServerLoad } from './$types';
 
-export const load = (async ({ fetch }) => {
+export const load = (async ({ fetch, setHeaders }) => {
 	// fetchs ovi's stats from the nhl api
 	const res = await fetch(
 		'https://statsapi.web.nhl.com/api/v1/people/8471214/stats?stats=yearByYear'
@@ -19,8 +19,8 @@ export const load = (async ({ fetch }) => {
 	// array of splits objects
 	const splits = data.stats[0].splits;
 	// graps the season play by on the Caps and spreads into an array
-	const [...oviCapSeasons] = splits.filter((split: Split) => {
-		split.team.name === 'Washington Capitals';
+	const oviCapSeasons = splits.filter((split: Split) => {
+		return split.team.name === 'Washington Capitals';
 	});
 
 	// maps over the filtered caps seaons and return an arrow of goals
@@ -30,6 +30,12 @@ export const load = (async ({ fetch }) => {
 
 	// adds up all goals in the goals array to get the total goals
 	const totalGoals = goals.reduce((a, b) => a + b, 0);
+	console.log(totalGoals);
+
+	// caches for 6 hours
+	setHeaders({
+		'Cache-Control': 'max-age=21600'
+	});
 
 	return {
 		totalGoals: totalGoals
